@@ -9,18 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications & Talks — PDE/FSI</title>
   <style>
-    :root {
-      --maxw: 920px;
-    }
-    html, body { margin: 0; padding: 0; }
+    :root { --maxw: 920px; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       line-height: 1.6;
       color: #111827;
-      background: #ffffff;
+      background: #fff;
+      margin: 0;
     }
     header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1.25rem; }
-    header h1 { margin: 0.2rem 0 0.2rem; font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem); }
+    header h1 { margin: 0.2rem 0; font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem); }
     header p { margin: 0; color: #6b7280; }
     h2 {
       margin-top: 2.25rem;
@@ -28,22 +26,12 @@
       padding-bottom: 0.3rem;
       font-size: 1.25rem;
     }
-    /* “Official” looking list with hanging indent */
     .item-list { list-style: none; padding: 0; margin: 0.8rem 0; }
     .item-list li { margin: 0 0 0.9rem 0; }
-    .entry {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 0.75rem;
-      align-items: start;
-    }
-    .entry time {
-      font-variant-numeric: tabular-nums;
-      color: #374151;
-      white-space: nowrap;
-    }
-    .entry .title { font-weight: 600; }
-    .entry .meta { color: #374151; }
+    .entry { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem; align-items: start; }
+    .entry time { color: #374151; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .title { font-weight: 600; }
+    .meta { font-weight: normal; color: #374151; }
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .pill {
@@ -65,7 +53,7 @@
       <li class="entry">
         <time datetime="2025-03-15">December, 2025</time>
         <div>
-          <div class="title">Qualitative and Numerical Properties of a Nonlinear Fluid-Structure Interaction Model<span class="meta">(with George Avalos)</span></div>
+          <div class="title">Qualitative and Numerical Properties of a Nonlinear Fluid-Structure Interaction Model <span class="meta">(with George Avalos)</span></div>
           <div>
             <a href="./preprint_draft/" aria-label="Paper 1 link">Link to arXiv draft (forthcoming)</a>
             <span class="pill">preprint</span>
@@ -76,7 +64,7 @@
       <li class="entry">
         <time datetime="2024-11-02">October, 2025</time>
         <div>
-          <div class="title">A Revisiting of the Pressure Elimination for a Fluid-Structure PDE Interaction and its Implications<span class="meta">(with George Avalos)</span></div>
+          <div class="title">A Revisiting of the Pressure Elimination for a Fluid-Structure PDE Interaction and its Implications <span class="meta">(with George Avalos)</span></div>
           <div>
             <a href="#" aria-label="Paper 2 link">Link (forthcoming)</a>
             <span class="pill">preprint</span>
