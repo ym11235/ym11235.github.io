@@ -1,0 +1,215 @@
+<!-- touch -->
+
+<!-- trigger rebuild -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching</title>
+  <style>
+    :root { --maxw: 920px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #fff;
+      margin: 0;
+    }
+    header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1.25rem; }
+        /* —— Top navigation strip —— */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #f8fafc;           /* keeps text readable regardless of image colors */
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+    header a { color: #0366d6; text-decoration: none; font-weight: 500; }
+    header a:hover { text-decoration: underline; }
+
+    main h1 {
+      margin-top: 0;          /* or whatever you like */
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem);
+    }
+    main > p:first-of-type {
+      margin-top: 0.2rem;
+      color: #6b7280;
+    }
+    
+    h2 {
+      margin-top: 2.25rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      font-size: 1.25rem;
+    }
+    .item-list { list-style: none; padding: 0; margin: 0.8rem 0; }
+    .item-list li { margin: 0 0 0.9rem 0; }
+    .entry { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem; align-items: start; }
+    .entry time { color: #374151; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .title { font-weight: 600; }
+    .meta { font-weight: normal; color: #374151; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill {
+      display: inline-block; border: 1px solid #e5e7eb; border-radius: 999px;
+      padding: 0.1rem 0.55rem; font-size: 0.9rem; margin-left: 0.35rem; color: #111827;
+    }
+    footer { margin-top: 2.5rem; color: #6b7280; font-size: 0.95rem; border-top: 1px solid #f3f4f6; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">CV</a>
+    <a href="/pde_fsi/">Publications &amp; Talks</a>
+    <a href="https://arxiv.org/a/0009-0002-8406-7028">arXiv</a>
+    <a href="https://orcid.org/0009-0002-8406-7028">ORCiD</a>
+    <a href="https://scholar.google.com/citations?hl=en&user=VhU7bg4AAAAJ">Google Scholar</a>
+    <a href="#">Other writings</a>
+  </header>
+
+  <main>
+    <h1>Teaching</h1>
+    <p>Past teaching activity</p>
+    
+    <h2>UNL</h2>
+    <ul class="item-list">
+      <li class="entry">
+        <time datetime="2025-12-28">Fall 2025</time>
+        <div>
+          <div class="title">Instructor for Math 103 (College Algebra and Trigonometry) </div>
+        </div>
+      </li>
+
+      <li class="entry">
+        <time datetime="2025-07-15">Summer 2025</time>
+        <div>
+          <div class="title">Instructor for Math 221 (Differential Equations)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2025-05-15">Spring 2025</time>
+        <div>
+          <div class="title">Instructor for Math 103 (College Algebra and Trigonometry)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2024-12-15">Fall 2024</time>
+        <div>
+          <div class="title">TA for Math 221 (Differential Equations)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2024-08-15">Summer 2024</time>
+        <div>
+          <div class="title">Instructor for Math 221 (Differential Equations)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2024-05-15">Spring 2024</time>
+        <div>
+          <div class="title">TA for Math 221 (Differential Equations)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2023-12-15">Fall 2023</time>
+        <div>
+          <div class="title">TA for Math 107 (Calculus II) Recitations</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2023-05-15">Spring 2023</time>
+        <div>
+          <div class="title">Instructor for Math 101 (College Algebra)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2022-12-15">Fall 2022</time>
+        <div>
+          <div class="title">Instructor for Math 101 (College Algebra)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2022-05-15">Spring 2022</time>
+        <div>
+          <div class="title">TA for Math 106 (Calculus I) Recitations</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2021-12-15">Fall 2021</time>
+        <div>
+          <div class="title">TA for Math 106 (Calculus I) Recitations</span></div>
+        </div>
+      </li>
+      
+    </ul>
+      
+
+    <h2>Grading</h2>
+    <ul class="item-list">
+      
+      <li class="entry">
+        <time datetime="2025-12-15">Fall 2025</time>
+        <div>
+          <div class="title">Grading for Math 310 (Modern Algebra)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2024-12-15">Fall 2024</time>
+        <div>
+          <div class="title">Math 104 (Applied Calculus) exam grading</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2023-12-15">Fall 2023</time>
+        <div>
+          <div class="title">Math 104 exam grading</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2022-05-15">Spring 2022</time>
+        <div>
+          <div class="title">Grading for Math 309 (Introduction to Proofs)</span></div>
+        </div>
+      </li>
+      
+    </ul>
+
+    
+    <h2>Pedagogy</h2>
+    <ul class="item-list">
+      <li class="entry">
+        <time datetime="2023-05-15">Spring 2023</time>
+        <div>
+          <div class="title">Pedagogy Part II (Observations and teaching assignments)</span></div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2022-12-15">Fall 2022</time>
+        <div>
+          <div class="title">Pedagogy Part I (Observations and teaching assignments)</span></div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div>Last updated <time datetime="2025-11-01">Nov 1, 2025</time>.</div>
+  </footer>
+</body>
+</html>
