@@ -1,0 +1,139 @@
+<!-- touch -->
+
+<!-- trigger rebuild -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Links</title>
+  <style>
+    :root { --maxw: 920px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #fff;
+      margin: 0;
+    }
+    header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1.25rem; }
+        /* —— Top navigation strip —— */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #f8fafc;           /* keeps text readable regardless of image colors */
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+    header a { color: #0366d6; text-decoration: none; font-weight: 500; }
+    header a:hover { text-decoration: underline; }
+
+    main h1 {
+      margin-top: 0;          /* or whatever you like */
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem);
+    }
+    main > p:first-of-type {
+      margin-top: 0.2rem;
+      color: #6b7280;
+    }
+    
+    h2 {
+      margin-top: 2.25rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      font-size: 1.25rem;
+    }
+    .item-list { list-style: none; padding: 0; margin: 0.8rem 0; }
+    .item-list li { margin: 0 0 0.9rem 0; }
+    .entry { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem; align-items: start; }
+    .entry time { color: #374151; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .title { font-weight: 600; }
+    .meta { font-weight: normal; color: #374151; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill {
+      display: inline-block; border: 1px solid #e5e7eb; border-radius: 999px;
+      padding: 0.1rem 0.55rem; font-size: 0.9rem; margin-left: 0.35rem; color: #111827;
+    }
+    footer { margin-top: 2.5rem; color: #6b7280; font-size: 0.95rem; border-top: 1px solid #f3f4f6; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://ym11235.github.io/">Home</a>
+    <a href="/pde_fsi/">Publications &amp; Talks</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/organizational/">Organizational</a>
+    <a href="/projects/">Projects</a>
+    <a href="https://arxiv.org/a/0009-0002-8406-7028">arXiv</a>
+    Links
+  </header>
+
+  <main>
+    <h1>Links</h1>
+    <p>Links to other websites, both related to me and not.</p>
+    
+    <h2>Research activity in other sources</h2>
+    <ul class="item-list">
+      <li class="entry">
+        <div>
+          <div class="title">University Page (UNL)</div>
+          <div>
+            <a href="https://math.unl.edu/person/yuhao-mu/" aria-label="Link">Link</a>
+            <span class="pill">University Profile</span>
+          </div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <div>
+          <div class="title">arXiv profile page</div>
+          <div>
+            <a href="https://arxiv.org/a/0009-0002-8406-7028" aria-label="Link">Link</a>
+            <span class="pill">Papers and Preprints</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="entry">
+        <div>
+          <div class="title">ORCiD</div>
+          <div>
+            <a href="https://orcid.org/0009-0002-8406-7028" aria-label="Link">Link</a>
+            <span class="pill">Research Profile</span>
+          </div>
+        </div>
+      </li>
+      
+      <li class="entry">
+        <div>
+          <div class="title">Google Scholar</div>
+          <div>
+            <a href="https://scholar.google.com/citations?hl=en&user=VhU7bg4AAAAJ" aria-label="Link">Link</a>
+            <span class="pill">Research Profile</span>
+          </div>
+        </div>
+      </li>
+      
+
+    <h2>Other Links and References</h2>
+    <ul class="item-list">
+      <li class="entry">
+        <div>
+          <div class="title">Advisor University Page (George Avalos, UNL)</div>
+          <div>
+            <a href="https://math.unl.edu/person/george-avalos/" aria-label="Link">Link</a>
+            <span class="pill">University Profile</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    
+  </main>
+  
+</body>
+</html>
