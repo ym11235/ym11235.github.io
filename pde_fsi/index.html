@@ -20,6 +20,18 @@
     header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1.25rem; }
     header h1 { margin: 0.2rem 0; font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem); }
     header p { margin: 0; color: #6b7280; }
+        /* —— Top navigation strip —— */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #f8fafc;           /* keeps text readable regardless of image colors */
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+    header a { color: #0366d6; text-decoration: none; font-weight: 500; }
+    header a:hover { text-decoration: underline; }
+
     h2 {
       margin-top: 2.25rem;
       border-bottom: 1px solid #e5e7eb;
