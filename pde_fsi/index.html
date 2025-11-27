@@ -30,8 +30,14 @@
     header a { color: #0366d6; text-decoration: none; font-weight: 500; }
     header a:hover { text-decoration: underline; }
 
-    header h1 { margin: 0.2rem 0; font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem); }
-    header p { margin: 0; color: #6b7280; }
+    main h1 {
+      margin-top: 0;          /* or whatever you like */
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem);
+    }
+    main > p:first-of-type {
+      margin-top: 0.2rem;
+      color: #6b7280;
+    }
     
     h2 {
       margin-top: 2.25rem;
@@ -62,11 +68,12 @@
     <a href="https://orcid.org/0009-0002-8406-7028">ORCiD</a>
     <a href="https://scholar.google.com/citations?hl=en&user=VhU7bg4AAAAJ">Google Scholar</a>
     <a href="#">Other writings</a>
-    <h1>Publications & Talks — PDE / FSI</h1>
-    <p>Selected papers and talks.</p>
   </header>
 
   <main>
+    <h1>Publications & Talks — PDE / FSI</h1>
+    <p>Selected papers and talks.</p>
+    
     <h2>Publications</h2>
     <ul class="item-list">
       <li class="entry">
