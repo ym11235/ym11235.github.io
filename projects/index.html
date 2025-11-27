@@ -1,0 +1,134 @@
+<!-- touch -->
+
+<!-- trigger rebuild -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <style>
+    :root { --maxw: 920px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #fff;
+      margin: 0;
+    }
+    header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1.25rem; }
+        /* —— Top navigation strip —— */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #f8fafc;           /* keeps text readable regardless of image colors */
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+    header a { color: #0366d6; text-decoration: none; font-weight: 500; }
+    header a:hover { text-decoration: underline; }
+
+    main h1 {
+      margin-top: 0;          /* or whatever you like */
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.2rem);
+    }
+    main > p:first-of-type {
+      margin-top: 0.2rem;
+      color: #6b7280;
+    }
+    
+    h2 {
+      margin-top: 2.25rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      font-size: 1.25rem;
+    }
+    .item-list { list-style: none; padding: 0; margin: 0.8rem 0; }
+    .item-list li { margin: 0 0 0.9rem 0; }
+    .entry { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem; align-items: start; }
+    .entry time { color: #374151; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .title { font-weight: 600; }
+    .meta { font-weight: normal; color: #374151; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill {
+      display: inline-block; border: 1px solid #e5e7eb; border-radius: 999px;
+      padding: 0.1rem 0.55rem; font-size: 0.9rem; margin-left: 0.35rem; color: #111827;
+    }
+    footer { margin-top: 2.5rem; color: #6b7280; font-size: 0.95rem; border-top: 1px solid #f3f4f6; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://ym11235.github.io/">Home</a>
+    <a href="/pde_fsi/">Publications &amp; Talks</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/organizational/">Organizational</a>
+    Projects
+    <a href="https://arxiv.org/a/0009-0002-8406-7028">arXiv</a>
+    <a href="#">Other Writings</a>
+  </header>
+
+  <main>
+    <h1>Projects</h1>
+    <p>Past projects related to topics of: PDEs, data science, numerical schemes and optimization</p>
+    
+    <h2>Conferences and Workshops</h2>
+    <ul class="item-list">
+      <li class="entry">
+        <time datetime="2025-05-28">Spring 2025</time>
+        <div>
+          <div class="title">Image Classification Using SVM and ResNet-like Blocks</div>
+          <div> CSCE 878: Deep Learning (Spring 2025). Midterm Python project: ``Comparing SVM (Support Vector Machines) and CNN for Image Classification'' (cifar-10 data).
+            <span class="pill">Deep Learning</span> <span class="pill">Machine Learning</span>
+          </div>
+          <div>Achieved precision of 0.81, recall of 0.81, F1 of 0.80, based on simple ResNet-like architecture and parameter tuning.
+          </div>
+          <div>Tools used: Python (Tensorflow, PyTorch).
+          </div>
+        </div>
+      </li>
+
+      <li class="entry">
+        <time datetime="2024-12-15">Fall 2024</time>
+        <div>
+          <div class="title">Implementation and Comparison of Dara-Driven vs. PDE models for Groundwater Flow Simulation</div>
+          <div>GEOL 855 Computational Methods for Modeling Earth Systems (Fall 2024). Final Python project: ``Comparing Different Model Solvers and Parameters for Groundwater Flow'' (PDE and data-driven models).
+            <span class="pill">Statistical Models</span> <span class="pill">MODFLOW for PDE</span>
+        </div>
+          <div>Tools Used: Python (Pandas, Scikit-Learn, Tensorflow, FloPy).</div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2024-05-15">Spring 2023</time>
+        <div>
+          <div class="title">Numerical Implementation of a Koopman Operator Algorithm for Computing Lyapunov Functions </div>
+          <div>Math 939 Topics in Applied Math (Numerical PDEs). Final MATLAB and Python project: ``Computation of Lyapunov Functions via Composition Operator Method''. Implemented different version (with new vectorization) of a prior code implementation, using splines.
+            <span class="pill">Control Theory</span> <span class="pill">Splines</span>
+        </div>
+          <div>Tools Used: Tools Used: Python, Matlab.</div>
+      </li>
+      
+      <li class="entry">
+        <time datetime="2025-05-28">October 2023</time>
+        <div>
+          <div class="title">Nonlinear Optimization: Final Project and Presentation</div>
+          <div> Math 933 (Nonlinear Optimization). Final MATLAB project and presentation: ``Feasible-Point Methods''.
+            <span class="pill">Optimization</span>
+        </div>
+          <div>Tools Used: MATLAB.</div>
+      </li>
+    </ul>
+      
+
+
+    
+  </main>
+
+  <footer>
+    <div>Last updated <time datetime="2025-11-15">Nov 15, 2025</time>.</div>
+  </footer>
+</body>
+</html>
